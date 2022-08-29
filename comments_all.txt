@@ -1,0 +1,24 @@
+1. HTML
+<!--both-->
+
+2. CSS
+/* both*/
+
+
+3. JS
+//single line
+/* multiline*/
+
+4. PHP
+# single line
+// single line
+/* multiline*/
+
+5. SQL
+--single line
+/* multiline*/
+
+6. Python
+# single line
+'''multiline'''
+""""multiline""""

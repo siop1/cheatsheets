@@ -1,0 +1,41 @@
+This is my plan to make a AI voice assistant named SIOP and I will make it better and better in upcoming days
+by learning more about machine learning algorithm and python modules
+
+-----------------------------version_1-------------------------------------
+## "Hey SIOP" detection
+First of all I will teach my AI to detect only "Hey SIOP" from other ambient noises, keyboard and mouse
+clicking, and various random noises.For this I have to train my model for this giving a lot 
+of data.
+
+
+## Speech recognition
+I will use some opensource package of google for recognition of what I say. I will convert my
+speech into text and search for various things.
+
+## Text to speech
+I will teach it to pronounce anything written in english. It will help to reply to us.
+
+# Performing various tasks
+I will teach it do various tasks like :
+1. opening programs
+2. Sending emails
+3. searching wikipedia,google,youtube
+5. playing music
+6. saying date and time
+7. saying weather
+------------------------------version_2-------------------------------------------
+## My voice detection
+Once it learns to detect "Hey SIOP" from other sounds I will teach it to detect my voice only.Except
+me nobody can use it .If someone says "Hey SIOP" then it detects it and communicate with phrase like
+"You donot have permission to use me because you are not Mr. Aryan".For this again I have to train this
+model feeding millions of my voice data
+
+## Speech recognition
+I will teach SIOP to recognize nepali language.
+
+## Text to speech
+I will teach it to pronounce anything written in Nepali language. It will help to reply to us.
+
+
+## Performing various tasks
+I will keep adding more things as I learn more.

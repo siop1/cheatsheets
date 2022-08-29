@@ -1,0 +1,26 @@
+# git remote
+show origin
+add origin ssh_link_of_repo ==> set the location of github to push remote repo
+set-url ssh_link_of_repo ==> set new origin for repo 
+
+
+# git push or git push -u origin master ==> default is master or main
+git push -u origin new_branch 
+git push -f ==> push forcefully note:plz use wisely bcoz once i have accidently pushed my one repo to another thanks to god i had backup
+
+
+# git pull
+
+# git branch new_branch_name ==> add new branch
+git branch -M main ==> to set default brach to main
+git branch -d branch_name ==> delete the branch
+git checkout branch_name ==> switch branch
+
+# git merge
+
+#git checkout filename ==> restore to last commit
+# git diff . ==> show recent changes in all file
+git diff filename ==> show recent changes in specific file
+
+# git commit -m "message"
+git commit --amend ==> edit last commit message
