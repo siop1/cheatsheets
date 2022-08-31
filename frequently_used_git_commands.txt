@@ -1,26 +1,47 @@
-# git remote
-show origin
-add origin ssh_link_of_repo ==> set the location of github to push remote repo
-set-url ssh_link_of_repo ==> set new origin for repo 
+# Working with github
+git remote show origin
+git remote add origin ssh_link_of_repo ==> set the location of github to push remote repo
+git remote set-url ssh_link_of_repo ==> set new origin/location for repo even if already exists
 
 
-# git push or git push -u origin master ==> default is master or main
-git push -u origin new_branch 
-git push -f ==> push forcefully note:plz use wisely bcoz once i have accidently pushed my one repo to another thanks to god i had backup
+git push or git push -u origin master ==> default is master or main
+git push -u origin new_branch ==> for pushing any branch and separate branch will be created
+				on github without affecting master(default) branch
+git push -f ==> push forcefully note:plz use wisely bcoz once i have accidently pushed my one repo to 
+		another thanks to god i had backup
 
 
-# git pull
+git pull
+=================================================================================================================================================================
+# Working with branches
+git branch new_branch_name ==> add new branch
+git branch -M main ==> to set default brach to 'main'
+git branch -d branch_name ==> delete the branch branch_name
+git checkout branch_name ==> switch branch to branch_name
 
-# git branch new_branch_name ==> add new branch
-git branch -M main ==> to set default brach to main
-git branch -d branch_name ==> delete the branch
-git checkout branch_name ==> switch branch
+git merge branch_name ==> merges master to selected branch
+=================================================================================================================================================================
 
-# git merge
-
-#git checkout filename ==> restore to last commit
-# git diff . ==> show recent changes in all file
+git diff . ==> show recent changes in all file
 git diff filename ==> show recent changes in specific file
+==================================================================================================================================================================
 
-# git commit -m "message"
+# Commits
+git commit -m "message"
 git commit --amend ==> edit last commit message
+===========================================================================================================================================================
+
+# Unstaging
+git reset
+==========================================================================================================================================================
+
+# for switching between various commits
+git checkout file_name ==> restore to last commit
+git checkout commit_id . #don't miss the dot(.) and this will affect master but no commit will be lost
+git checkout commit_id  #this will switch to coommit_id temporary and this will not affect master
+git reset --hard commit_id # lets assume you are in commit5 and if you go to commit3 then
+your commit4 and commit5 will be lost and your head will be set to commit3 and your data will be changed
+as per commit3
+git reset --soft commit_id #your current data will not be changed but your head will be set to selected
+commit_id and all the commits after that commit_id will be lost
+=============================================================================================================================================================
