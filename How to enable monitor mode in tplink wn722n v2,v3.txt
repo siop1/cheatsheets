@@ -1,0 +1,32 @@
+## How to enable monitor mode in tplink wn722n version 2/3 ?
+
+
+ sudo apt update
+ sudo apt upgrade
+ apt list --upgradable
+ sudo apt-get dist-upgrade
+ reboot
+ sudo apt-get install linux-headers-$(uname -r)
+ sudo apt-get install build-essential
+ sudo apt-get install libelf-dev
+ sudo apt install dkms
+ sudo apt install bc
+sudo rmmod r8188eu.ko
+ git clone https://github.com/aircrack-ng/rtl8188eus
+ cd rtl8188eus
+sudo -i
+echo "blacklist r8188eu" > "/etc/modprobe.d/realtek.conf"
+reboot
+cd rtl8188eus
+ sudo make && sudo make install
+sudo modprobe 8188eu
+ reboot
+
+Finally after that you will be able to turn on monitor mode..... 
+Enter this to turn on monitor mode
+
+sudo ifconfig wlan0 down
+sudo airmon-ng check kill
+sudo iwconfig wlan0 mode monitor
+sudo ifconfig wlan0 up
+sudo iwconfig  ==> this will show mode:monitor
